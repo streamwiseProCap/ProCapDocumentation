@@ -1,0 +1,12 @@
+{
+  // Prose is not wrapped; GitBook renders long lines fine.
+  "MD013": false,
+  // GitBook uses inline HTML such as <figure> for images.
+  "MD033": false,
+  // Repeated headings (e.g. "Settings") are fine on different levels.
+  "MD024": { "siblings_only": true },
+  // GitBook uses "*" for bullets when it commits edits back.
+  "MD004": { "style": "asterisk" },
+  // Table pipe alignment is not enforced (GitBook rewrites tables).
+  "MD060": false
+}
