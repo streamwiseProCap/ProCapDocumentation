@@ -1,5 +1,5 @@
 ---
-description: Define the measurement domain: position, size, orientation and resolution.
+description: Set the position, size, orientation and resolution of the measurement domain.
 ---
 
 # Domain

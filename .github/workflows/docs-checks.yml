@@ -16,6 +16,11 @@ jobs:
         with:
           globs: "docs/**/*.md"
 
+      - name: Check front matter
+        run: |
+          pip install --quiet pyyaml
+          python3 scripts/check_frontmatter.py
+
       - name: Check SUMMARY.md
         run: python3 scripts/check_summary.py
 

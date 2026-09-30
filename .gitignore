@@ -15,3 +15,5 @@ __pycache__/
 # Local drafts that should not be published
 *.local.md
 .vscode
+README.md
+CLAUDE.md
