@@ -15,5 +15,6 @@ __pycache__/
 # Local drafts that should not be published
 *.local.md
 .vscode
-README.md
-CLAUDE.md
+# Leading slash: only the root files. Without it, docs/**/README.md (GitBook pages) would be ignored too.
+/README.md
+/CLAUDE.md
