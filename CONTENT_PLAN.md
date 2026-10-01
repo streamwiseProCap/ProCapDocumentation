@@ -21,7 +21,7 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 | `getting-started/system-requirements.md` | stub | Windows x64, GPU with compute shaders, supported tracking systems | Ask the product team |
 | `getting-started/features-and-editions.md` | draft | Feature and limit matrix | `Scripts\Control\EditionCapabilities.cs`, `ProCapEdition.cs`, `ProCapVersion.cs` |
 | `getting-started/installation-and-license-activation.md` | stub | Installer, folders next to the exe (`Internal`, `ProbeConfig`, `Templates`, `Legacy`), CodeMeter runtime, dongle, maintenance updates, Reader network server | `Scripts\Configuration\AppPaths.cs`. Missing `procap_manual/wibu.tex`. `docs\encryption\` is internal. |
-| `getting-started/quick-start.md` | stub | End-to-end walkthrough | All sections |
+| `getting-started/quick-start.md` | draft | End-to-end walkthrough, 11 steps | 2026.0 user manual quick-start guide (p. 55), updated to the 2027 labels from the code base (`LoadProjectShellView.prefab`, `FloatingWindowProbePanel.prefab`, `MeasurementWidget.prefab`, `MainUIView.prefab`) |
 
 ## ProCap projects
 
