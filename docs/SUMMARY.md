@@ -35,6 +35,7 @@
   * [Models](scene-setup/models.md)
   * [Measurement domain and interpolation](scene-setup/measurement-domain-and-interpolation.md)
   * [Probe settings](scene-setup/probe-settings.md)
+
 ## Visualization features
 
 * [Visualization features](visualization/visualization-features.md)
