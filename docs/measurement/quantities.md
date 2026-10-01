@@ -1,5 +1,5 @@
 ---
-description: Measured and derived flow quantities available for visualization.
+description: Measured and derived flow quantities available in ProCap.
 ---
 
 # Quantities

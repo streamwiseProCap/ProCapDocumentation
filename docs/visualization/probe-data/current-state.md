@@ -1,5 +1,5 @@
 ---
-description: Inspect the live probe state and position feedback during a measurement.
+description: Inspect the live probe readings and position feedback.
 ---
 
 # Current state

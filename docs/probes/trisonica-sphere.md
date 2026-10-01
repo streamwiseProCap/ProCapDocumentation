@@ -1,8 +1,8 @@
 ---
-description: Connect and configure flow probes in the Probe Panel.
+description: Use the Trisonica Sphere with ProCap.
 ---
 
-# Probes
+# Trisonica Sphere
 
 {% hint style="warning" %}
 This page is being written.

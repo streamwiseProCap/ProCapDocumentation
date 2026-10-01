@@ -1,8 +1,8 @@
 ---
-description: Connect a motion-tracking system to record probe positions.
+description: Set up a Qualisys motion-tracking system for ProCap.
 ---
 
-# Motion tracking
+# Qualisys
 
 {% hint style="info" %}
 **Editions:** Professional, Compact and Student. Professional Reader is replay-only.

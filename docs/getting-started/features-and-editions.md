@@ -2,7 +2,7 @@
 description: Compare the features and limits of the ProCap editions.
 ---
 
-# Editions
+# Features and editions
 
 ProCap is available in four editions. The edition you have is shown in the title of **Software Settings**, for example **PROFESSIONAL 2027.0**.
 
@@ -17,18 +17,18 @@ ProCap is available in four editions. The edition you have is shown in the title
 
 | Feature | Professional | Compact | Professional Reader | Student |
 | --- | :---: | :---: | :---: | :---: |
-| [Live measurement](../measurement/recording.md) | ✓ | ✓ | – | ✓ |
-| [Replay](../measurement/replay.md) | ✓ | ✓ | ✓ | ✓ |
+| [Live measurement](../measurement/recording-a-measurement.md) | ✓ | ✓ | – | ✓ |
+| [Measurement replay](../measurement/measurement-replay.md) | ✓ | ✓ | ✓ | ✓ |
 | [Visualization planes](../visualization/visualization-planes.md) | ✓ | ✓ | ✓ | ✓ |
 | [Isosurfaces](../visualization/isosurfaces.md) | ✓ | – | ✓ | ✓ |
 | [Streamlines](../visualization/streamlines.md) | ✓ | – | ✓ | – |
 | [Projections](../visualization/projections.md) | ✓ | – | ✓ | ✓ ¹ |
 | [Plot-over line](../visualization/plot-over-line.md) | ✓ | – | ✓ | ✓ |
-| [Voxel Eraser](../measurement/voxel-eraser.md) | ✓ | – | ✓ | – |
+| [Voxel Eraser](../visualization/voxel-eraser.md) | ✓ | – | ✓ | – |
 | Confidence interval | ✓ | – | ✓ | – |
 | User-defined elements | ✓ | – | ✓ | – |
 | Full color map list | ✓ | – | ✓ | ✓ |
-| [Custom probe geometry](../measurement/custom-probes.md) | ✓ | – | ✓ | ✓ |
+| Custom probe geometry | ✓ | – | ✓ | ✓ |
 | Analog probes | ✓ | – | ✓ | – |
 | External probe | ✓ | – | – | – |
 

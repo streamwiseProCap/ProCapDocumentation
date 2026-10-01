@@ -1,8 +1,8 @@
 ---
-description: Capture images of the 3D view.
+description: Use the Vectoflow micro iProbe with ProCap.
 ---
 
-# Screenshots
+# micro iProbe
 
 {% hint style="warning" %}
 This page is being written.

@@ -1,8 +1,8 @@
 ---
-description: What is new in ProCap 2027.
+description: View and evaluate the data recorded by the probe.
 ---
 
-# ProCap 2027
+# Probe data
 
 {% hint style="warning" %}
 This page is being written.

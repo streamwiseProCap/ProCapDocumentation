@@ -1,8 +1,8 @@
 ---
-description: Configure the ground plane of your scene.
+description: Vectoflow probes that work with ProCap.
 ---
 
-# Ground plane
+# Vectoflow probes
 
 {% hint style="warning" %}
 This page is being written.

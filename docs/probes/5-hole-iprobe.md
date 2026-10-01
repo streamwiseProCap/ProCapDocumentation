@@ -1,8 +1,8 @@
 ---
-description: Terms used throughout ProCap and this documentation.
+description: Use the Vectoflow 5-hole iProbe with ProCap.
 ---
 
-# Glossary
+# 5-hole iProbe
 
 {% hint style="warning" %}
 This page is being written.

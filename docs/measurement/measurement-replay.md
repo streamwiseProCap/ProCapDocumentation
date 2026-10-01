@@ -1,8 +1,8 @@
 ---
-description: Replay recorded measurements and imported measurement logs.
+description: Replay recorded measurements step by step.
 ---
 
-# Replay
+# Measurement replay
 
 {% hint style="info" %}
 **Editions:** All editions.
