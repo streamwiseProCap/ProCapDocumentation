@@ -17,13 +17,13 @@ ProCap measures and visualizes three-dimensional flow fields. You move a flow pr
 
 | Section | What you will find |
 | --- | --- |
+| [Projects](projects/start-screen.md) | The start screen, creating and opening projects, and what a project folder contains |
 | [The workspace](workspace/README.md) | The display header, hotbar, windows, camera and general settings |
-| [Projects](projects/create-and-open.md) | Creating and opening projects, and what a project folder contains |
 | [Scene setup](scene-setup/coordinate-system.md) | Coordinate system, domain, ground plane, models, interpolation, and saving and reloading |
 | [Visualization features](visualization/visualization-features.md) | Probe data, visualization planes, isosurfaces, projections, streamlines and line plots |
 | [Measurement](measurement/quantities.md) | Quantities, connecting a probe, recording, replay and data export |
 | [Data processing](data-processing/import-measurement-data.md) | Importing measurement data and working with ParaView |
-| [References](reference/user-defined-functions.md) | User defined functions and troubleshooting |
-| [The openWire protocol](openwire/what-is-openwire.md) | The openWire protocol, the Arduino Student kit and the test bench |
 | [Supported probes](probes/vectoflow-probes.md) | Probes that work with ProCap |
 | [Optical tracking systems](tracking/optitrack.md) | Setting up OptiTrack, Qualisys and Vicon |
+| [The openWire protocol](openwire/what-is-openwire.md) | The openWire protocol, the Arduino Student kit and the test bench |
+| [References](reference/user-defined-functions.md) | User defined functions and troubleshooting |

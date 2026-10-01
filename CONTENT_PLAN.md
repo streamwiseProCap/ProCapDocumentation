@@ -23,25 +23,25 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 | `getting-started/installation-and-license-activation.md` | stub | Installer, folders next to the exe (`Internal`, `ProbeConfig`, `Templates`, `Legacy`), CodeMeter runtime, dongle, maintenance updates, Reader network server | `Scripts\Configuration\AppPaths.cs`. Missing `procap_manual/wibu.tex`. `docs\encryption\` is internal. |
 | `getting-started/quick-start.md` | stub | End-to-end walkthrough | All sections |
 
+## Projects
+
+| Page | Status | Topics | Sources |
+| --- | --- | --- | --- |
+| `projects/start-screen.md` | stub | Recent projects (max. 15), **LOAD PROJECT** | `_scenes\LoadProject.unity`, LoadProjectShellView |
+| `projects/create-and-open.md` | stub | New project from `Templates\base_template`, open existing | `Scripts\Configuration\ProjectFileService.cs` |
+| `projects/project-folder.md` | stub | `configFile.proCap`, `Input\`, `Output\`, `Output\ScreenShots` | `ProjectFileService.cs` |
+
 ## The workspace
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
 | `workspace/README.md` | stub | Layout: header, hotbar, floating windows, 3D view | WhatsNew §1.1 |
-| `workspace/start-screen.md` | stub | Recent projects (max. 15), **LOAD PROJECT** | `_scenes\LoadProject.unity`, LoadProjectShellView |
 | `workspace/display-header.md` | stub | Master toggles, left-click vs right-click | WhatsNew §1.1, §1.2 |
 | `workspace/hotbar-and-windows.md` | stub | Panel bubbles, list windows, Apply/Cancel | WhatsNew §1.1, `Scripts\UI\ProCapUi\Hotbar\` |
 | `workspace/camera-and-navigation.md` | stub | Orbit, pan, zoom, saved views, lights | WhatsNew §3.11 |
 | `workspace/gizmos.md` | stub | Transform gizmos | `Scripts\Interaction\Gizmo\` |
 | `workspace/software-settings.md` | stub | Interface Scale, Skybox Settings (stored per machine) | WhatsNew §1.3, `Panels\SoftwareSettingsWindow\` |
 | `workspace/warnings-and-notices.md` | stub | WARNING / NOTICE dialogs, revert behavior | WhatsNew §1.5 |
-
-## Projects
-
-| Page | Status | Topics | Sources |
-| --- | --- | --- | --- |
-| `projects/create-and-open.md` | stub | New project from `Templates\base_template`, open existing | `Scripts\Configuration\ProjectFileService.cs` |
-| `projects/project-folder.md` | stub | `configFile.proCap`, `Input\`, `Output\`, `Output\ScreenShots` | `ProjectFileService.cs` |
 
 ## Scene setup
 

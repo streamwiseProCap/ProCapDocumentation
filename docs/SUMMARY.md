@@ -1,7 +1,7 @@
 # Table of contents
 
-* [What's new](whats-new.md)
 * [Welcome to ProCap](README.md)
+* [What's new](whats-new.md)
 
 ## Getting started
 
@@ -11,21 +11,21 @@
 * [Installation and license activation](getting-started/installation-and-license-activation.md)
 * [Quick start](getting-started/quick-start.md)
 
+## Projects
+
+* [Start screen](projects/start-screen.md)
+* [Create and open projects](projects/create-and-open.md)
+* [Project folder structure](projects/project-folder.md)
+
 ## The workspace
 
 * [Workspace overview](workspace/README.md)
-  * [Start screen](workspace/start-screen.md)
   * [Display header](workspace/display-header.md)
   * [Hotbar and windows](workspace/hotbar-and-windows.md)
   * [Camera and navigation](workspace/camera-and-navigation.md)
   * [Transform gizmos](workspace/gizmos.md)
   * [Software settings](workspace/software-settings.md)
   * [Warnings and notices](workspace/warnings-and-notices.md)
-
-## Projects
-
-* [Create and open projects](projects/create-and-open.md)
-* [Project folder structure](projects/project-folder.md)
 
 ## Scene setup
 
@@ -62,17 +62,6 @@
 * [Import of measurement data](data-processing/import-measurement-data.md)
 * [Working with ParaView](data-processing/working-with-paraview.md)
 
-## References
-
-* [User defined functions](reference/user-defined-functions.md)
-* [Troubleshooting](reference/troubleshooting.md)
-
-## The openWire protocol
-
-* [What is openWire?](openwire/what-is-openwire.md)
-* [Arduino Student kit](openwire/arduino-student-kit.md)
-* [OpenWire test bench](openwire/openwire-test-bench.md)
-
 ## Supported probes
 
 * [Vectoflow probes](probes/vectoflow-probes.md)
@@ -85,3 +74,14 @@
 * [OptiTrack](tracking/optitrack.md)
 * [Qualisys](tracking/qualisys.md)
 * [Vicon](tracking/vicon.md)
+
+## The openWire protocol
+
+* [What is openWire?](openwire/what-is-openwire.md)
+* [Arduino Student kit](openwire/arduino-student-kit.md)
+* [OpenWire test bench](openwire/openwire-test-bench.md)
+
+## References
+
+* [User defined functions](reference/user-defined-functions.md)
+* [Troubleshooting](reference/troubleshooting.md)
