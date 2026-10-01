@@ -20,7 +20,7 @@ ProCap measures and visualizes three-dimensional flow fields. You move a flow pr
 | [Projects](projects/start-screen.md) | The start screen, creating and opening projects, and what a project folder contains |
 | [The workspace](workspace/README.md) | The display header, hotbar, windows, camera and general settings |
 | [Scene setup](scene-setup/coordinate-system.md) | Coordinate system, domain, ground plane, models, interpolation, and saving and reloading |
-| [Visualization features](visualization/visualization-features.md) | Probe data, visualization planes, isosurfaces, projections, streamlines and line plots |
+| [Visualization features](visualization/visualization-features.md) | Probe data, visualization planes, isosurfaces, projections, streamlines, line plots and the Voxel Eraser |
 | [Measurement](measurement/quantities.md) | Quantities, connecting a probe, recording, replay and data export |
 | [Data processing](data-processing/import-measurement-data.md) | Importing measurement data and working with ParaView |
 | [Supported probes](probes/vectoflow-probes.md) | Probes that work with ProCap |

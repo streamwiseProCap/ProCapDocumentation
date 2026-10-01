@@ -55,7 +55,7 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 
 ## Visualization features
 
-The landing page `visualization/visualization-features.md` uses the layout of the Motive "Toolbar" page: a toolbar strip image, followed by one expandable block per feature, each with an inline icon (`data-size="line"`). `visualization/probe-data.md` uses the same pattern.
+The landing page `visualization/visualization-features.md` is only a list of expandable blocks, one per feature, each with an inline icon (`data-size="line"`). It has no subtitle, intro text or toolbar image. `visualization/probe-data.md` uses the same pattern.
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
@@ -113,8 +113,6 @@ The landing page `visualization/visualization-features.md` uses the layout of th
 ## Placeholder assets to replace
 
 * `docs/.gitbook/assets/icon-*.svg`: placeholder icons. Replace them with the real UI icons (keep the file names or update the references in `visualization/visualization-features.md` and `visualization/probe-data.md`).
-* `docs/.gitbook/assets/visualization-toolbar.svg`: placeholder for a screenshot of the ProCap toolbar.
-
 ## Open questions
 
 * Where are the sources of the existing customer manual (`procap_manual`, including `wibu.tex`)? It may contain content to reuse.

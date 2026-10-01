@@ -1,12 +1,4 @@
----
-description: Explore the reconstructed flow field with planes, isosurfaces, projections, streamlines and line plots, and clean it up with the Voxel Eraser.
----
-
 # Visualization features
-
-ProCap offers several ways to look at the reconstructed flow field. You can combine them freely, for example a visualization plane with streamlines passing through it.
-
-<figure><img src="../.gitbook/assets/visualization-toolbar.svg" alt="The ProCap visualization feature icons"><figcaption><p>The visualization features in ProCap.</p></figcaption></figure>
 
 <details>
 
