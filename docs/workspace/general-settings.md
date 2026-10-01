@@ -2,7 +2,7 @@
 description: Adjust the interface scale and skybox orientation aids.
 ---
 
-# Software settings
+# General settings
 
 {% hint style="warning" %}
 This page is being written.

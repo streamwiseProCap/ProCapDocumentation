@@ -11,7 +11,7 @@
 * [Installation and license activation](getting-started/installation-and-license-activation.md)
 * [Quick start](getting-started/quick-start.md)
 
-## Projects
+## ProCap projects
 
 * [Start screen](projects/start-screen.md)
 * [Create and open projects](projects/create-and-open.md)
@@ -21,20 +21,20 @@
 
 * [Workspace overview](workspace/README.md)
   * [Display header](workspace/display-header.md)
+  * [Coordinate system](workspace/coordinate-system.md)
   * [Hotbar and windows](workspace/hotbar-and-windows.md)
   * [Camera and navigation](workspace/camera-and-navigation.md)
   * [Transform gizmos](workspace/gizmos.md)
-  * [Software settings](workspace/software-settings.md)
+  * [General settings](workspace/general-settings.md)
+  * [Save, Save As and Reload](workspace/save-and-reload.md)
   * [Warnings and notices](workspace/warnings-and-notices.md)
 
-## Scene setup
+## Setting up the scene
 
-* [Coordinate system](scene-setup/coordinate-system.md)
-* [Domain and ground plane](scene-setup/domain-and-ground-plane.md)
-* [Models](scene-setup/models.md)
-* [Interpolation settings](scene-setup/interpolation-settings.md)
-* [Save and reload settings](scene-setup/save-and-reload-settings.md)
-
+* [Setting up the scene](scene-setup/setting-up-the-scene.md)
+  * [Models](scene-setup/models.md)
+  * [Measurement domain and interpolation](scene-setup/measurement-domain-and-interpolation.md)
+  * [Probe settings](scene-setup/probe-settings.md)
 ## Visualization features
 
 * [Visualization features](visualization/visualization-features.md)

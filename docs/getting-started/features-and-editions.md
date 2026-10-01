@@ -4,7 +4,7 @@ description: Compare the features and limits of the ProCap editions.
 
 # Features and editions
 
-ProCap is available in four editions. The edition you have is shown in the title of **Software Settings**, for example **PROFESSIONAL 2027.0**.
+ProCap is available in four editions. The edition you have is shown in the title of [**General Settings**](../workspace/general-settings.md), for example **PROFESSIONAL 2027.0**.
 
 | Edition | Intended for |
 | --- | --- |

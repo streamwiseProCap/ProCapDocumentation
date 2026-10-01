@@ -23,7 +23,7 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 | `getting-started/installation-and-license-activation.md` | stub | Installer, folders next to the exe (`Internal`, `ProbeConfig`, `Templates`, `Legacy`), CodeMeter runtime, dongle, maintenance updates, Reader network server | `Scripts\Configuration\AppPaths.cs`. Missing `procap_manual/wibu.tex`. `docs\encryption\` is internal. |
 | `getting-started/quick-start.md` | stub | End-to-end walkthrough | All sections |
 
-## Projects
+## ProCap projects
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
@@ -37,22 +37,24 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 | --- | --- | --- | --- |
 | `workspace/README.md` | stub | Layout: header, hotbar, floating windows, 3D view | WhatsNew §1.1 |
 | `workspace/display-header.md` | stub | Master toggles, left-click vs right-click | WhatsNew §1.1, §1.2 |
+| `workspace/coordinate-system.md` | stub | Axes, origin, units, coordinate origin toggle | WhatsNew §1.1 (Coordinate Origin) |
 | `workspace/hotbar-and-windows.md` | stub | Panel bubbles, list windows, Apply/Cancel | WhatsNew §1.1, `Scripts\UI\ProCapUi\Hotbar\` |
 | `workspace/camera-and-navigation.md` | stub | Orbit, pan, zoom, saved views, lights | WhatsNew §3.11 |
 | `workspace/gizmos.md` | stub | Transform gizmos | `Scripts\Interaction\Gizmo\` |
-| `workspace/software-settings.md` | stub | Interface Scale, Skybox Settings (stored per machine) | WhatsNew §1.3, `Panels\SoftwareSettingsWindow\` |
+| `workspace/general-settings.md` | stub | **General Settings** (opened from the header cog): Interface Scale, Skybox Settings (stored per machine), edition and version in the title | WhatsNew §1.3, §1.7, `Panels\SoftwareSettingsWindow\` |
+| `workspace/save-and-reload.md` | stub | Save (case info review), Save As (folder clone, confirmation if the destination is not empty), Reload (confirms, stops probes, reloads from disk). The only page that covers saving and reloading | WhatsNew §1.6, `Panels\SaveSettingsWindow\` |
 | `workspace/warnings-and-notices.md` | stub | WARNING / NOTICE dialogs, revert behavior | WhatsNew §1.5 |
 
-## Scene setup
+## Setting up the scene
+
+The landing page `scene-setup/setting-up-the-scene.md` uses the same expandable-with-icon layout as `visualization/visualization-features.md`.
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
-| `scene-setup/coordinate-system.md` | stub | Axes, origin, units, coordinate origin toggle | WhatsNew §1.1 (Coordinate Origin) |
-| `scene-setup/domain-and-ground-plane.md` | stub | Domain size, position, orientation, resolution. Ground plane settings | WhatsNew §3.6, `Panels\DomainWindow\`, `Panels\GroundPlaneWindow\` |
+| `scene-setup/setting-up-the-scene.md` | draft | Overview with expandable entries | — |
 | `scene-setup/models.md` | stub | STL import, **From Primitive**, mesh/wireframe overlay, CAD lighting | WhatsNew §3.4, §3.5, §3.10, `Panels\ModelsListWindow\`, `ModelSettingsWindow\`, `FromPrimitiveWindow\` |
-| `scene-setup/interpolation-settings.md` | stub | Interpolation Type, epsilon, **Use MultiGrid**, **Split Point Threshold**, reload on apply | WhatsNew §2.1, §2.2, `Panels\InterpolationSettingsWindow\` |
-| `scene-setup/save-and-reload-settings.md` | stub | Save (case info review), Save As (folder clone, confirmation if the destination is not empty), Reload (confirms, stops probes, reloads from disk) | WhatsNew §1.6, `Panels\SaveSettingsWindow\` |
-
+| `scene-setup/measurement-domain-and-interpolation.md` | stub | Domain size, position, orientation, resolution. Interpolation Type, epsilon, **Use MultiGrid**, **Split Point Threshold**, reload on apply | WhatsNew §2.1, §2.2, §3.6, `Panels\DomainWindow\`, `Panels\InterpolationSettingsWindow\` |
+| `scene-setup/probe-settings.md` | stub | All probe configuration: probe selection, probe type (digital/analog), Probe Panel settings. The only page that covers probe configuration | `Panels\ProbeWindow\`, `Scripts\Features\ProbeFeature\` |
 ## Visualization features
 
 The landing page `visualization/visualization-features.md` is only a list of expandable blocks, one per feature, each with an inline icon (`data-size="line"`). It has no subtitle, intro text or toolbar image. `visualization/probe-data.md` uses the same pattern.
@@ -75,7 +77,7 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
 | `measurement/quantities.md` | stub | Measured and derived quantities (magnitude, component, curl, divergence, Q-criterion, vorticity), ppV, ppVraw, PointDensity, ConfInt | WhatsNew §3.8, `Scripts\Quantities\Rules\` |
-| `measurement/connecting-a-probe.md` | stub | Probe Panel, digital/analog probes, COM port / IP connection | WhatsNew §4.1, §4.2, `Panels\ProbeWindow\`, `Scripts\Features\ProbeFeature\` |
+| `measurement/connecting-a-probe.md` | stub | Physical connection only: COM port / IP connection, checking that data arrives. Link to `scene-setup/probe-settings.md` for configuration | WhatsNew §4.1, §4.2, `Scripts\Features\ProbeFeature\` |
 | `measurement/recording-a-measurement.md` | stub | **START MEASUREMENT**, recording, measurement note, `.proCapLog` | WhatsNew §4.3, §4.5, `Scripts\Features\Measurement\` |
 | `measurement/measurement-replay.md` | stub | Replay, model-pose replay, Reader without tracker | WhatsNew §4.3–§4.5, §4.9, `Scripts\Features\ModelReplay\` |
 | `measurement/data-export.md` | stub | **DATA EXPORT**: VTU (ParaView), raw data CSV, STL, screenshots | WhatsNew §4.6, `Panels\DataExportWindow\DataExportView.cs` |
