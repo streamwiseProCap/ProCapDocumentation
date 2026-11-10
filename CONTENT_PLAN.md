@@ -36,12 +36,13 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
 | `workspace/README.md` | stub | Layout: header, hotbar, floating windows, 3D view | WhatsNew §1.1 |
-| `workspace/display-header.md` | stub | Master toggles, left-click vs right-click | WhatsNew §1.1, §1.2 |
+| `workspace/display-header.md` | stub | Master toggles (for example the **Current state** icon, which shows or hides the whole current state), left-click vs right-click | WhatsNew §1.1, §1.2 |
 | `workspace/coordinate-system.md` | stub | Axes, origin, units, coordinate origin toggle | WhatsNew §1.1 (Coordinate Origin) |
 | `workspace/hotbar-and-windows.md` | stub | Panel bubbles, list windows, Apply/Cancel | WhatsNew §1.1, `Scripts\UI\ProCapUi\Hotbar\` |
 | `workspace/probe-statistics.md` | stub | HUD block: connection state (Disconnected, Connecting..., Connected, Calibrating..., Calibrated), data rate in Hz with dropped samples and reconnects, probe model, tracking warning | WhatsNew §4.1, `Panels\ProbeStatistics\` (lives in `ProbeDebug.prefab`, but the user confirmed on 2026-11-10 that customers see it). The software shows no title for the HUD; "Probe statistics" is a working title |
+| `workspace/probe-data-card.md` | stub | Probe data card in the main workspace: velocity magnitude, value of the current-state quantity, probe tip position in mm, option to let the card follow the probe tip on screen (it returns to its place when tracking is lost). Not part of the current state; `visualization/current-state.md` only links to it | `Panels\CurrentStateCard\` (needs a screenshot for the labels) |
 | `workspace/camera-and-navigation.md` | stub | Orbit, pan, zoom, saved views, lights | WhatsNew §3.11 |
-| `workspace/gizmos.md` | stub | Transform gizmos | `Scripts\Interaction\Gizmo\` |
+| `workspace/gizmos.md` | stub | Transform gizmos. Written so far: selecting objects (orange selected outline, light-blue hover outline) and the quick actions bar in detail (Show or hide, Edit, Move or edit shape, Duplicate, Delete, Lock color map). Still to write: the gizmo itself (arrows, rings, local vs scene axes) | `Scripts\Interaction\Gizmo\`, `UI\ProCapUi\Interaction\StandardQuickActions.cs`, `Interaction\SelectionOutlineSystem.cs` |
 | `workspace/general-settings.md` | stub | **General Settings** (opened from the header cog): Interface Scale, Skybox Settings (stored per machine), edition and version in the title | WhatsNew §1.3, §1.7, `Panels\SoftwareSettingsWindow\` |
 | `workspace/save-and-reload.md` | stub | Save (case info review), Save As (folder clone, confirmation if the destination is not empty), Reload (confirms, stops probes, reloads from disk). The only page that covers saving and reloading | WhatsNew §1.6, `Panels\SaveSettingsWindow\` |
 | `workspace/warnings-and-notices.md` | stub | WARNING / NOTICE dialogs, revert behavior | WhatsNew §1.5 |
@@ -64,8 +65,8 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
 | `visualization/visualization-features.md` | draft | Overview with expandable entries | — |
-| `visualization/current-state.md` | stub | Current State card and window, position feedback. Probe statistics and the HUD are covered in `workspace/probe-statistics.md` | `Panels\CurrentStateCard\`, `CurrentStateWindow\` |
-| `visualization/visualization-planes.md` | stub | Planes list and settings, surface streamlines, cut planes and outlines | WhatsNew §3.2, §3.7, `Panels\PlanesListWindow\`, `PlaneSettingsWindow\` |
+| `visualization/current-state.md` | draft | **Current State Settings** panel (Visibility Settings, Quantity Settings) with screenshot crop `current-state-settings-panel.png`, the indicators at the probe tip, one sentence linking to `workspace/probe-data-card.md`. Probe statistics and the HUD are covered in `workspace/probe-statistics.md` | User screenshot of the 2027 panel. `Settings\UI\Panels\CurrentStateSettings.panel.json`, `Panels\CurrentStateWindow\`, `Panels\CurrentStateCard\`, `RTVisualization\CurrentStateView.cs` |
+| `visualization/visualization-planes.md` | draft | Visualization Planes panel (list), General, Scalar Settings, Vector Settings, surface streamlines, the plane in the 3D view (orange outline, gizmo, quick actions in brief, legend). Screenshot crops `visualization-planes-list-panel.png`, `plane-settings-*.png`, `visualization-plane-in-scene.png` | User screenshots of the 2027 panels. `Settings\UI\Panels\PlaneSettings.panel.json`, `Panels\PlaneSettingsWindow\`, `RTVisualization\PlaneGizmoTarget.cs`, `PlaneInteractableTarget.cs`, `SurfaceStreamlineDrawer.cs`, `Shaders\Visualization\Quiver.shader`, `UI\ProCapUi\Interaction\ColorMapHost.cs`, WhatsNew §3.2, §3.7 |
 | `visualization/isosurfaces.md` | stub | Isosurfaces list and settings | `Panels\IsosurfacesListWindow\`, `IsosurfaceSettingsWindow\` |
 | `visualization/projections.md` | stub | Projection surfaces, analytics (force, moment, pivot) | WhatsNew §3.3, `Panels\ProjectionsListWindow\`, `ProjectionSettingsWindow\`. Force and moment evaluation is covered in `visualization/surface-analytics.md` |
 | `visualization/streamlines.md` | stub | Rakes, seed points, attach to probe | WhatsNew §4.8, `Panels\RakesListWindow\`, `RakeSettingsWindow\` |

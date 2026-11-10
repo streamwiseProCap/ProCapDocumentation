@@ -24,6 +24,7 @@
   * [Coordinate system](workspace/coordinate-system.md)
   * [Hotbar and windows](workspace/hotbar-and-windows.md)
   * [Probe statistics](workspace/probe-statistics.md)
+  * [Probe data card](workspace/probe-data-card.md)
   * [Camera and navigation](workspace/camera-and-navigation.md)
   * [Transform gizmos](workspace/gizmos.md)
   * [General settings](workspace/general-settings.md)
