@@ -32,7 +32,7 @@ You need:
 5. **Adjust the probe settings.** Open the **Probe Panel** from the hotbar. Check the probe settings and, under **VRPN Settings**, the **Tracker Type** and **Tracker name** of your probe's rigid body. Select **APPLY**. See [Probe settings](../scene-setup/probe-settings.md).
 6. **Add the model and set up the domain.**
    * Copy the `.stl` file into the `Input` folder of the project.
-   * Open the **Models List** from the hotbar and select **ADD**. In the model settings, select your file in the **File** list and adjust the position of the model. See [Model settings](../scene-setup/models.md).
+   * Open **Models List** from the hotbar and select **+ Add**. Select the new model in the list, select your file in the **File** list, adjust the position of the model and select **APPLY**. See [Model settings](../scene-setup/models.md).
    * Open **Domain Settings** from the hotbar. Adjust the size and position of the measurement domain, then select **SAVE & RELOAD**. See [Measurement domain and interpolation settings](../scene-setup/measurement-domain-and-interpolation.md).
 7. **Check the setup.** ProCap shows the tracked probe and model live in the 3D view. Check that both are positioned and tracked correctly. See [Current state](../visualization/current-state.md).
 8. **Save the project.** When you are happy with the settings, select **Save** in the display header. See [Save, Save As and Reload](../workspace/save-and-reload.md).

@@ -54,8 +54,8 @@ The landing page `scene-setup/setting-up-the-scene.md` uses the same expandable-
 | --- | --- | --- | --- |
 | `scene-setup/setting-up-the-scene.md` | draft | Overview with expandable entries | — |
 | `scene-setup/measurement-domain-and-interpolation.md` | draft | Title: "Measurement domain and interpolation settings". The combined **Domain Settings** panel: Dimensions, Voxel Settings, Interpolation Settings, Groundplane Settings, each with a screenshot crop and a settings table. Reload on apply, ground plane applies instantly, edition gating of MultiGrid and the `_INT` types. Verified against the `live` branch on 2026-11-10 | User screenshot of the 2027 panel. `Settings\UI\Panels\DomainSettings.panel.json` (labels), `Panels\DomainWindow\` (incl. the interpolation and ground-plane section controllers), `Configuration\Domain.cs`, `SketchDomain.cs`, `DomainApplier.cs`, `ProCapInterpolation\GPUInterpolation.cs`, WhatsNew §2.1, §2.2, §3.6 |
-| `scene-setup/models.md` | stub | Title: "Model settings". STL import, **From Primitive**, mesh/wireframe overlay, CAD lighting | WhatsNew §3.4, §3.5, §3.10, `Panels\ModelsListWindow\`, `ModelSettingsWindow\`, `FromPrimitiveWindow\` |
-| `scene-setup/probe-settings.md` | stub | All probe configuration: probe selection, Probe Panel settings. The only page that covers probe configuration | `Panels\ProbeWindow\`, `Scripts\Features\ProbeFeature\` |
+| `scene-setup/models.md` | draft | Title: "Model settings". Models panel (list), Model panel (General, Tracking), **+ Primitive**, relative tracking with **ZERO OFFSET**. Screenshot crops `models-list-panel.png`, `model-settings-panel.png` | User screenshot of the 2027 panels. `Settings\UI\Panels\ModelSettings.panel.json`, `FromPrimitive.panel.json`, `Panels\ModelsListWindow\`, `ModelSettingsWindow\`, `Shared\SceneListEntry.cs`, `Configuration\ModelHandler.cs`, `Model.cs`, WhatsNew §3.4, §3.5, §3.10 |
+| `scene-setup/probe-settings.md` | draft | All probe configuration. The only page that covers probe configuration. Covers only the standard digital probes (iProbe, Sphere): Probe Connection State, Probe Selector, VRPN Settings, Digital Probe Settings, Signal Processing Settings, each with a screenshot crop. Other probe models' sections (for example Ambient Settings) are deliberately not described, only a note that settings vary by model | User screenshot of the 2027 panel. `Settings\UI\Panels\ProbeSettings.panel.json`, `Panels\ProbeWindow\`, `DataStorage\DataClasses.cs` (velocity clipping), `EditionCapabilities.cs` |
 
 ## Visualization features
 
@@ -88,7 +88,7 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
-| `data-processing/import-measurement-data.md` | stub | Import `.proCapLog`, select multiple datasets, change interpolation settings at import | WhatsNew §4.5, `Scripts\DataStorage\ProCapLog\` |
+| `data-processing/import-measurement-data.md` | stub | Import `.proCapLog`, select multiple datasets, change interpolation settings at import, reprocess the raw data with a different signal processing threshold (linked from `scene-setup/probe-settings.md`) | WhatsNew §4.5, `Scripts\DataStorage\ProCapLog\` |
 | `data-processing/working-with-paraview.md` | stub | Opening `MultigridData_*.vtu` in ParaView | `DataExportView.cs` |
 
 ## References
@@ -123,3 +123,4 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 * Official system requirements (GPU, RAM, supported tracking systems and versions).
 * Screenshots: who captures them, and in which edition and version?
 * Support contact to publish in the documentation.
+* CAD lighting (WhatsNew §3.10): not documented for now, and not mentioned in the docs. Decide later where it belongs.
