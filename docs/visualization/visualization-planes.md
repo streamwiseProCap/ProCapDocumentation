@@ -92,7 +92,7 @@ With **Surface streamlines instead of vectors** switched on, ProCap traces strea
 | **Seed points** | The number of streamlines, from 10 to 500. The default is 200. |
 | **Seeding Rate** | How often a new particle starts along each streamline. Higher values place the particles closer together. |
 | **Velocity Scaling** | How fast the particles move along the streamlines. |
-| **Show Sphere Markers** | Shows the particles as spheres. |
+| **Show Sphere Markers** | Shows the moving particles as spheres. When off, only the streamlines are drawn. |
 | **Symbol Size** | The size of the particles. |
 | **Color** | The color of the streamlines. |
 

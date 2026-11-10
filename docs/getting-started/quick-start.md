@@ -29,7 +29,7 @@ You need:
    * To open an existing project, select **BROWSE** and select the top-level folder of the project, not its `Input` folder. Then select **LOAD**.
 
    See [Start screen](../projects/start-screen.md) and [Create and open projects](../projects/create-and-open.md).
-5. **Adjust the probe settings.** Open the **Probe Panel** from the hotbar. Check the probe settings and, under **VRPN Settings**, the **Tracker Type** and **Tracker name** of your probe's rigid body. Select **APPLY**. See [Probe settings](../scene-setup/probe-settings.md).
+5. **Adjust the probe settings.** Open **Probe Settings** from the hotbar. Check the probe settings and, under **VRPN Settings**, the **Tracker Type** and **Tracker name** of your probe's rigid body. Select **APPLY**. See [Probe settings](../scene-setup/probe-settings.md).
 6. **Add the model and set up the domain.**
    * Copy the `.stl` file into the `Input` folder of the project.
    * Open **Models List** from the hotbar and select **+ Add**. Select the new model in the list, select your file in the **File** list, adjust the position of the model and select **APPLY**. See [Model settings](../scene-setup/models.md).
@@ -37,7 +37,7 @@ You need:
 7. **Check the setup.** ProCap shows the tracked probe and model live in the 3D view. Check that both are positioned and tracked correctly. See [Current state](../visualization/current-state.md).
 8. **Save the project.** When you are happy with the settings, select **Save** in the display header. See [Save, Save As and Reload](../workspace/save-and-reload.md).
 9. **Start the measurement.**
-   1. In the **Probe Panel**, select **CONNECT**.
+   1. In **Probe Settings**, select **CONNECT**.
    2. With the flow switched off, select **ZERO OFFSET** to correct the zero-velocity offset of the probe.
    3. Switch on the flow, then select **START MEASUREMENT**.
 

@@ -12,7 +12,7 @@ The sections and settings in the panel depend on the probe model you select. Oth
 
 ## Change the settings
 
-1. Open **Probe Panel** from the hotbar. The **Probe Settings** panel opens.
+1. Open **Probe Settings** from the hotbar.
 2. If the probe is connected, select **DISCONNECT**. ProCap locks the settings while the probe is connected.
 3. Change the settings you need. They are described in the sections below.
 4. Select **APPLY** to apply the changes, or **CANCEL** to discard them. The buttons appear as soon as you change a setting.
