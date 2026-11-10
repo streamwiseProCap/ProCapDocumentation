@@ -23,6 +23,7 @@
   * [Display header](workspace/display-header.md)
   * [Coordinate system](workspace/coordinate-system.md)
   * [Hotbar and windows](workspace/hotbar-and-windows.md)
+  * [Probe statistics](workspace/probe-statistics.md)
   * [Camera and navigation](workspace/camera-and-navigation.md)
   * [Transform gizmos](workspace/gizmos.md)
   * [General settings](workspace/general-settings.md)
@@ -39,14 +40,13 @@
 ## Visualization features
 
 * [Visualization features](visualization/visualization-features.md)
-  * [Probe data](visualization/probe-data.md)
-    * [Current state](visualization/probe-data/current-state.md)
-    * [Probe data](visualization/probe-data/probe-data.md)
+  * [Current state](visualization/current-state.md)
   * [Visualization planes](visualization/visualization-planes.md)
   * [Isosurfaces](visualization/isosurfaces.md)
   * [Projections](visualization/projections.md)
   * [Streamlines](visualization/streamlines.md)
   * [Plot-over line](visualization/plot-over-line.md)
+  * [Surface analytics](visualization/surface-analytics.md)
   * [Voxel Eraser](visualization/voxel-eraser.md)
 
 ## Measurement

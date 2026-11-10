@@ -20,11 +20,11 @@ ProCap is available in four editions. The edition you have is shown in the title
 | [Live measurement](../measurement/recording-a-measurement.md) | ✓ | ✓ | – | ✓ |
 | [Measurement replay](../measurement/measurement-replay.md) | ✓ | ✓ | ✓ | ✓ |
 | [Visualization planes](../visualization/visualization-planes.md) | ✓ | ✓ | ✓ | ✓ |
-| Vector visualization (vectors on planes, surface streamlines, the [Current state](../visualization/probe-data/current-state.md) arrow) | ✓ | ✓ | ✓ | – |
+| Vector visualization (vectors on planes, surface streamlines, the [Current state](../visualization/current-state.md) arrow) | ✓ | ✓ | ✓ | – |
 | [Isosurfaces](../visualization/isosurfaces.md) | ✓ | – | ✓ | ✓ |
 | [Streamlines](../visualization/streamlines.md) | ✓ | – | ✓ | – |
 | [Projections](../visualization/projections.md) | ✓ | – | ✓ | ✓ ¹ |
-| Surface analytics (force, moment, volume flow) | ✓ | – | ✓ | ✓ |
+| [Surface analytics](../visualization/surface-analytics.md) (force, moment, volume flow) | ✓ | – | ✓ | ✓ |
 | [Plot-over line](../visualization/plot-over-line.md) | ✓ | – | ✓ | ✓ |
 | [Voxel Eraser](../visualization/voxel-eraser.md) | ✓ | – | ✓ | – |
 | Attaching planes and rakes to the probe | ✓ | – | ✓ | – |

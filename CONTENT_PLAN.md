@@ -39,6 +39,7 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 | `workspace/display-header.md` | stub | Master toggles, left-click vs right-click | WhatsNew §1.1, §1.2 |
 | `workspace/coordinate-system.md` | stub | Axes, origin, units, coordinate origin toggle | WhatsNew §1.1 (Coordinate Origin) |
 | `workspace/hotbar-and-windows.md` | stub | Panel bubbles, list windows, Apply/Cancel | WhatsNew §1.1, `Scripts\UI\ProCapUi\Hotbar\` |
+| `workspace/probe-statistics.md` | stub | HUD block: connection state (Disconnected, Connecting..., Connected, Calibrating..., Calibrated), data rate in Hz with dropped samples and reconnects, probe model, tracking warning | WhatsNew §4.1, `Panels\ProbeStatistics\` (lives in `ProbeDebug.prefab`, but the user confirmed on 2026-11-10 that customers see it). The software shows no title for the HUD; "Probe statistics" is a working title |
 | `workspace/camera-and-navigation.md` | stub | Orbit, pan, zoom, saved views, lights | WhatsNew §3.11 |
 | `workspace/gizmos.md` | stub | Transform gizmos | `Scripts\Interaction\Gizmo\` |
 | `workspace/general-settings.md` | stub | **General Settings** (opened from the header cog): Interface Scale, Skybox Settings (stored per machine), edition and version in the title | WhatsNew §1.3, §1.7, `Panels\SoftwareSettingsWindow\` |
@@ -58,19 +59,18 @@ The landing page `scene-setup/setting-up-the-scene.md` uses the same expandable-
 
 ## Visualization features
 
-The landing page `visualization/visualization-features.md` is only a list of expandable blocks, one per feature, each with an inline icon (`data-size="line"`). It has no subtitle, intro text or toolbar image. `visualization/probe-data.md` uses the same pattern.
+The landing page `visualization/visualization-features.md` is only a list of expandable blocks, one per feature, each with an inline icon (`data-size="line"`). It has no subtitle, intro text or toolbar image.
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
 | `visualization/visualization-features.md` | draft | Overview with expandable entries | — |
-| `visualization/probe-data.md` | draft | Overview of the two probe data pages | — |
-| `visualization/probe-data/current-state.md` | stub | Current State card and window, position feedback | `Panels\CurrentStateCard\`, `CurrentStateWindow\` |
-| `visualization/probe-data/probe-data.md` | stub | Probe statistics, HUD | WhatsNew §4.1, `Panels\ProbeStatistics\` |
+| `visualization/current-state.md` | stub | Current State card and window, position feedback. Probe statistics and the HUD are covered in `workspace/probe-statistics.md` | `Panels\CurrentStateCard\`, `CurrentStateWindow\` |
 | `visualization/visualization-planes.md` | stub | Planes list and settings, surface streamlines, cut planes and outlines | WhatsNew §3.2, §3.7, `Panels\PlanesListWindow\`, `PlaneSettingsWindow\` |
 | `visualization/isosurfaces.md` | stub | Isosurfaces list and settings | `Panels\IsosurfacesListWindow\`, `IsosurfaceSettingsWindow\` |
-| `visualization/projections.md` | stub | Projection surfaces, analytics (force, moment, pivot) | WhatsNew §3.3, `Panels\ProjectionsListWindow\`, `ProjectionSettingsWindow\`. Analytics now has its own hotbar panel (`SurfaceAnalyticsListWindow\`, `SurfaceAnalysisWindow\`); decide whether it gets its own page |
+| `visualization/projections.md` | stub | Projection surfaces, analytics (force, moment, pivot) | WhatsNew §3.3, `Panels\ProjectionsListWindow\`, `ProjectionSettingsWindow\`. Force and moment evaluation is covered in `visualization/surface-analytics.md` |
 | `visualization/streamlines.md` | stub | Rakes, seed points, attach to probe | WhatsNew §4.8, `Panels\RakesListWindow\`, `RakeSettingsWindow\` |
 | `visualization/plot-over-line.md` | stub | Line definition, plot window, plot files | WhatsNew §3.1, `Panels\PlotOverLineListWindow\`, `PlotOverLinePlotWindow\` |
+| `visualization/surface-analytics.md` | stub | **Surface analytics** panel: pressure force, moment about a reference point, volume flow on model surfaces | `Panels\SurfaceAnalyticsListWindow\`, `SurfaceAnalysisWindow\`, `Resources\UI\Panels\SurfaceAnalyticsPanel.asset`, `EditionCapabilities.cs` (SurfaceAnalytics) |
 | `visualization/voxel-eraser.md` | stub | Erasing regions of measurement data | WhatsNew §4.7, `Panels\VoxelEraserWindow\` |
 
 ## Measurement
@@ -115,7 +115,8 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 
 ## Placeholder assets to replace
 
-* `docs/.gitbook/assets/icon-*.svg`: placeholder icons, used in `visualization/visualization-features.md` and `visualization/probe-data.md`. Replace them with PNGs cropped from ProCap screenshots, as done for the Setting up the scene icons (`icon-models.png`, `icon-measurement-domain-and-interpolation.png`, `icon-probe-settings.png`), and update the references.
+* None. All icons are PNGs cropped from ProCap screenshots.
+
 ## Open questions
 
 * Where are the sources of the existing customer manual (`procap_manual`, including `wibu.tex`)? It may contain content to reuse.

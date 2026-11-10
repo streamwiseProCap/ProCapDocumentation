@@ -34,7 +34,7 @@ You need:
    * Copy the `.stl` file into the `Input` folder of the project.
    * Open the **Models List** from the hotbar and select **ADD**. In the model settings, select your file in the **File** list and adjust the position of the model. See [Model settings](../scene-setup/models.md).
    * Open **Domain Settings** from the hotbar. Adjust the size and position of the measurement domain, then select **SAVE & RELOAD**. See [Measurement domain and interpolation settings](../scene-setup/measurement-domain-and-interpolation.md).
-7. **Check the setup.** ProCap shows the tracked probe and model live in the 3D view. Check that both are positioned and tracked correctly. See [Current state](../visualization/probe-data/current-state.md).
+7. **Check the setup.** ProCap shows the tracked probe and model live in the 3D view. Check that both are positioned and tracked correctly. See [Current state](../visualization/current-state.md).
 8. **Save the project.** When you are happy with the settings, select **Save** in the display header. See [Save, Save As and Reload](../workspace/save-and-reload.md).
 9. **Start the measurement.**
    1. In the **Probe Panel**, select **CONNECT**.

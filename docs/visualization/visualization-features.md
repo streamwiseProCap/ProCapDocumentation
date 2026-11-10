@@ -2,18 +2,17 @@
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-probe-data.svg" alt="" data-size="line"> Probe data</summary>
+<summary><img src="../.gitbook/assets/icon-current-state.png" alt="" data-size="line"> Current state</summary>
 
-Inspect the live readings of the probe and the data it has recorded.
+Inspect the live probe readings and position feedback.
 
-* [Current state](probe-data/current-state.md)
-* [Probe data](probe-data/probe-data.md)
+[Learn more about the current state](current-state.md)
 
 </details>
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-visualization-planes.svg" alt="" data-size="line"> Visualization planes</summary>
+<summary><img src="../.gitbook/assets/icon-visualization-planes.png" alt="" data-size="line"> Visualization planes</summary>
 
 Slice the flow field with planes and display quantities on them.
 
@@ -23,7 +22,7 @@ Slice the flow field with planes and display quantities on them.
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-isosurfaces.svg" alt="" data-size="line"> Isosurfaces</summary>
+<summary><img src="../.gitbook/assets/icon-isosurfaces.png" alt="" data-size="line"> Isosurfaces</summary>
 
 Display surfaces of constant value in the flow field.
 
@@ -33,9 +32,9 @@ Display surfaces of constant value in the flow field.
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-projections.svg" alt="" data-size="line"> Projections</summary>
+<summary><img src="../.gitbook/assets/icon-projections.png" alt="" data-size="line"> Projections</summary>
 
-Project flow quantities onto model surfaces and evaluate forces and moments.
+Project flow quantities onto model surfaces.
 
 [Learn more about projections](projections.md)
 
@@ -43,7 +42,7 @@ Project flow quantities onto model surfaces and evaluate forces and moments.
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-streamlines.svg" alt="" data-size="line"> Streamlines</summary>
+<summary><img src="../.gitbook/assets/icon-streamlines.png" alt="" data-size="line"> Streamlines</summary>
 
 Seed streamlines from rakes to visualize the flow direction.
 
@@ -53,7 +52,7 @@ Seed streamlines from rakes to visualize the flow direction.
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-plot-over-line.svg" alt="" data-size="line"> Plot-over line</summary>
+<summary><img src="../.gitbook/assets/icon-plot-over-line.png" alt="" data-size="line"> Plot-over line</summary>
 
 Plot quantities along a line through the flow field.
 
@@ -63,7 +62,17 @@ Plot quantities along a line through the flow field.
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-voxel-eraser.svg" alt="" data-size="line"> Voxel Eraser</summary>
+<summary><img src="../.gitbook/assets/icon-surface-analytics.png" alt="" data-size="line"> Surface analytics</summary>
+
+Evaluate the pressure force, the moment and the volume flow on model surfaces.
+
+[Learn more about surface analytics](surface-analytics.md)
+
+</details>
+
+<details>
+
+<summary><img src="../.gitbook/assets/icon-voxel-eraser.png" alt="" data-size="line"> Voxel Eraser</summary>
 
 Remove unwanted measurement data from regions of the domain.
 
