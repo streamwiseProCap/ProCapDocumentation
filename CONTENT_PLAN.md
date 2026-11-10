@@ -55,7 +55,7 @@ The landing page `scene-setup/setting-up-the-scene.md` uses the same expandable-
 | --- | --- | --- | --- |
 | `scene-setup/setting-up-the-scene.md` | draft | Overview with expandable entries | — |
 | `scene-setup/measurement-domain-and-interpolation.md` | draft | Title: "Measurement domain and interpolation settings". The combined **Domain Settings** panel: Dimensions, Voxel Settings, Interpolation Settings, Groundplane Settings, each with a screenshot crop and a settings table. Reload on apply, ground plane applies instantly, edition gating of MultiGrid and the `_INT` types. Verified against the `live` branch on 2026-11-10 | User screenshot of the 2027 panel. `Settings\UI\Panels\DomainSettings.panel.json` (labels), `Panels\DomainWindow\` (incl. the interpolation and ground-plane section controllers), `Configuration\Domain.cs`, `SketchDomain.cs`, `DomainApplier.cs`, `ProCapInterpolation\GPUInterpolation.cs`, WhatsNew §2.1, §2.2, §3.6 |
-| `scene-setup/models.md` | draft | Title: "Model settings". Models panel (list), Model panel (General, Tracking), **+ Primitive**, relative tracking with **ZERO OFFSET**. Screenshot crops `models-list-panel.png`, `model-settings-panel.png` | User screenshot of the 2027 panels. `Settings\UI\Panels\ModelSettings.panel.json`, `FromPrimitive.panel.json`, `Panels\ModelsListWindow\`, `ModelSettingsWindow\`, `Shared\SceneListEntry.cs`, `Configuration\ModelHandler.cs`, `Model.cs`, WhatsNew §3.4, §3.5, §3.10 |
+| `scene-setup/models.md` | draft | Title: "Model settings". Models panel (list), Model panel (General, Tracking), **+ Primitive**, relative tracking with **ZERO OFFSET**. Screenshot crops `models-list-panel.png`, `model-settings-panel.png`, `add-primitive-panel.png` | User screenshot of the 2027 panels. `Settings\UI\Panels\ModelSettings.panel.json`, `FromPrimitive.panel.json`, `Panels\ModelsListWindow\`, `ModelSettingsWindow\`, `Shared\SceneListEntry.cs`, `Configuration\ModelHandler.cs`, `Model.cs`, WhatsNew §3.4, §3.5, §3.10 |
 | `scene-setup/probe-settings.md` | draft | All probe configuration. The only page that covers probe configuration. Covers only the standard digital probes (iProbe, Sphere): Probe Connection State, Probe Selector, VRPN Settings, Digital Probe Settings, Signal Processing Settings, each with a screenshot crop. Other probe models' sections (for example Ambient Settings) are deliberately not described, only a note that settings vary by model | User screenshot of the 2027 panel. `Settings\UI\Panels\ProbeSettings.panel.json`, `Panels\ProbeWindow\`, `DataStorage\DataClasses.cs` (velocity clipping), `EditionCapabilities.cs` |
 
 ## Visualization features
@@ -70,9 +70,9 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 | `visualization/isosurfaces.md` | draft | Isosurfaces panel (list). The screenshot crop `isosurfaces-list-panel.png` still shows the old title "Iso Surfaces"; the software will change it to "Isosurfaces", so replace the crop with a new screenshot then and isosurface settings, with screenshot crops `isosurfaces-list-panel.png`, `isosurface-settings-panel.png` | User screenshot of the 2027 panels. `Settings\UI\Panels\IsosurfaceSettings.panel.json`, `Panels\IsosurfacesListWindow\`, `IsosurfaceSettingsWindow\`, `Configuration\Isosurface.cs`, `RTVisualization\IsosurfaceInteractableTarget.cs` |
 | `visualization/projections.md` | draft | Projections panel (list), General, Scalar Settings, Vector Settings (surface streamlines), the projection in the 3D view (outline, quick actions incl. Σ, legend). Max. 5 projections, needs a model. Screenshot crops `projections-list-panel.png`, `projection-settings-*.png`, `projection-in-scene.png` | WhatsNew §3.3, `Panels\ProjectionsListWindow\`, `ProjectionSettingsWindow\`. Force and moment evaluation is covered in `visualization/surface-analytics.md` |
 | `visualization/streamlines.md` | draft | Streamlines panel (list), rake settings, the rake in the 3D view (three gizmos, quick actions). 11 streamlines per rake, max. 10 rakes. Screenshot crops `streamlines-list-panel.png`, `rake-settings-panel.png`, `rake-in-scene.png` | WhatsNew §4.8, `Panels\RakesListWindow\`, `RakeSettingsWindow\` |
-| `visualization/plot-over-line.md` | draft | Plot-over line panel (list), plot window (line settings, plot, exports to `Output/1Dplots`), the line in the 3D view. Max. 10 lines. Screenshot crops `plot-over-line-list-panel.png`, `plot-over-line-window.png`. No screenshot of the line in the 3D view yet | WhatsNew §3.1, `Panels\PlotOverLineListWindow\`, `PlotOverLinePlotWindow\` |
-| `visualization/surface-analytics.md` | stub | **Surface analytics** panel: pressure force, moment about a reference point, volume flow on model surfaces | `Panels\SurfaceAnalyticsListWindow\`, `SurfaceAnalysisWindow\`, `Resources\UI\Panels\SurfaceAnalyticsPanel.asset`, `EditionCapabilities.cs` (SurfaceAnalytics) |
-| `visualization/voxel-eraser.md` | stub | Erasing regions of measurement data | WhatsNew §4.7, `Panels\VoxelEraserWindow\` |
+| `visualization/lineplot.md` | draft | Title: "Lineplot" (the software's "Plot-over line" will be renamed to "Lineplot"). Lineplot panel (list), lineplot window (line settings, plot, exports to `Output/1Dplots`), the lineplot in the 3D view. Max. 10 lineplots. Screenshot crops `lineplot-list-panel.png`, `lineplot-window.png` still show the old names "Plot-over line" and "Plot-over-line-0"; replace them once the software is updated. No screenshot of the lineplot in the 3D view yet | WhatsNew §3.1, `Panels\PlotOverLineListWindow\`, `PlotOverLinePlotWindow\` |
+| `visualization/surface-analytics.md` | draft | **Surface analytics** panel (list), analysis window (Results, Surface, Pivot), simple shapes vs. models, the analysis in the 3D view (load arrows, pivot, move/rotate gizmo, resize arrows). Max. 10 analyses. Screenshot crops `surface-analytics-list-panel.png`, `surface-analysis-window.png`, `surface-analysis-move-rotate-gizmo.png`, `surface-analysis-resize-handles.png` | `Panels\SurfaceAnalyticsListWindow\`, `SurfaceAnalysisWindow\`, `Resources\UI\Panels\SurfaceAnalyticsPanel.asset`, `EditionCapabilities.cs` (SurfaceAnalytics) |
+| `visualization/voxel-eraser.md` | draft | Coverage aid: coarse cubes over the domain that disappear once they contain ppV / # measurement points (it does not delete data). Voxel Eraser Settings panel, screenshot crop `voxel-eraser-settings-panel.png` | WhatsNew §4.7, `Panels\VoxelEraserWindow\` |
 
 ## Measurement
 
@@ -117,6 +117,17 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 ## Placeholder assets to replace
 
 * None. All icons are PNGs cropped from ProCap screenshots.
+
+## UI labels to change in the software
+
+The documentation already uses the new labels. Replace the screenshot crops that show the old ones once the software is updated.
+
+| Current label in the software | New label | Where | Affected screenshot crops |
+| --- | --- | --- | --- |
+| Iso Surfaces | Isosurfaces | Title of the isosurface list panel | `isosurfaces-list-panel.png` |
+| Projections Panel | Projections | Hotbar name of the projections list | — |
+| Probe Panel | Probe Settings | Hotbar name of the probe settings panel | — |
+| Plot-over line | Lineplot | Hotbar name and title of the list panel, feature name everywhere (also the default item names such as "Plot-over-line-0") | `lineplot-list-panel.png`, `lineplot-window.png` |
 
 ## Open questions
 

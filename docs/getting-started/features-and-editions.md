@@ -25,7 +25,7 @@ ProCap is available in four editions. The edition you have is shown in the title
 | [Streamlines](../visualization/streamlines.md) | ✓ | – | ✓ | – |
 | [Projections](../visualization/projections.md) | ✓ | – | ✓ | ✓ ¹ |
 | [Surface analytics](../visualization/surface-analytics.md) (force, moment, volume flow) | ✓ | – | ✓ | ✓ |
-| [Plot-over line](../visualization/plot-over-line.md) | ✓ | – | ✓ | ✓ |
+| [Lineplot](../visualization/lineplot.md) | ✓ | – | ✓ | ✓ |
 | [Voxel Eraser](../visualization/voxel-eraser.md) | ✓ | – | ✓ | – |
 | Attaching planes and rakes to the probe | ✓ | – | ✓ | – |
 | Mesh display (wireframe on planes and models) | ✓ | – | ✓ | – |

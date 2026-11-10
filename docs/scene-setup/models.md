@@ -20,7 +20,21 @@ You can add up to 15 models in Professional and Professional Reader, and up to 5
 
 ## Add a primitive
 
-To add a simple shape without an STL file, select **+ Primitive** in the **Models** panel. In the **Add primitive** panel, choose a box, a sphere or a cylinder and enter its dimensions in mm. ProCap creates an STL file for the shape in the `Input` folder and adds it as a new model.
+To add a simple shape without an STL file:
+
+<figure><img src="../.gitbook/assets/add-primitive-panel.png" alt="The Add primitive panel with the Primitive Selector list open"><figcaption><p>The Add primitive panel</p></figcaption></figure>
+
+1. Select **+ Primitive** in the **Models** panel. The **Add primitive** panel opens.
+2. In **Primitive Selector**, select **Box**, **Sphere** or **Cylinder**. ProCap adds the shape as a new model right away, with a default size.
+3. Set the size of the shape in mm, then select **APPLY**. The fields depend on the shape:
+   * **Box:** Width, Depth and Height.
+   * **Sphere:** Radius.
+   * **Cylinder:** Radius and Length.
+
+   While the panel is open, you can also drag the resize arrows on the sides of the shape in the 3D view. **CANCEL** sets the fields back to the last applied size.
+4. Close the panel when you are done.
+
+To change the shape, select another entry in **Primitive Selector**. ProCap rebuilds the model and keeps the sizes you entered. ProCap creates an STL file for the shape in the `Input` folder. After you close the panel, the shape is a normal model: you edit it in the **Model** panel like any other model, and you can no longer change its size with the **Add primitive** panel.
 
 ## The Models panel
 

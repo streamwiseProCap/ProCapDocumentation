@@ -52,11 +52,11 @@ Seed streamlines from rakes to visualize the flow direction.
 
 <details>
 
-<summary><img src="../.gitbook/assets/icon-plot-over-line.png" alt="" data-size="line"> Plot-over line</summary>
+<summary><img src="../.gitbook/assets/icon-lineplot.png" alt="" data-size="line"> Lineplot</summary>
 
 Plot quantities along a line through the flow field.
 
-[Learn more about plot-over line](plot-over-line.md)
+[Learn more about lineplots](lineplot.md)
 
 </details>
 
@@ -74,7 +74,7 @@ Evaluate the pressure force, the moment and the volume flow on model surfaces.
 
 <summary><img src="../.gitbook/assets/icon-voxel-eraser.png" alt="" data-size="line"> Voxel Eraser</summary>
 
-Remove unwanted measurement data from regions of the domain.
+See which regions of the measurement domain still need measurement points.
 
 [Learn more about the Voxel Eraser](voxel-eraser.md)
 

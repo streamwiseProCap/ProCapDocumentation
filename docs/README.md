@@ -4,7 +4,7 @@ description: User documentation for the ProCap flow-field measurement system by 
 
 # Welcome to ProCap
 
-ProCap measures and visualizes three-dimensional flow fields. You move a flow probe through the air around your model while a motion-tracking system records the position of the probe. ProCap combines each pressure or velocity reading with its position and reconstructs a continuous flow field in real time. You can then explore the field with visualization planes, isosurfaces, streamlines, surface projections and line plots.
+ProCap measures and visualizes three-dimensional flow fields. You move a flow probe through the air around your model while a motion-tracking system records the position of the probe. ProCap combines each pressure or velocity reading with its position and reconstructs a continuous flow field in real time. You can then explore the field with visualization planes, isosurfaces, streamlines, surface projections and lineplots.
 
 ## Where to start
 
@@ -20,7 +20,7 @@ ProCap measures and visualizes three-dimensional flow fields. You move a flow pr
 | [ProCap projects](projects/start-screen.md) | The start screen, creating and opening projects, and what a project folder contains |
 | [The workspace](workspace/README.md) | The display header, coordinate system, hotbar, windows, probe statistics, camera, general settings, and saving and reloading |
 | [Setting up the scene](scene-setup/setting-up-the-scene.md) | Measurement domain and interpolation settings, model settings and probe settings |
-| [Visualization features](visualization/visualization-features.md) | Current state, visualization planes, isosurfaces, projections, streamlines, line plots, surface analytics and the Voxel Eraser |
+| [Visualization features](visualization/visualization-features.md) | Current state, visualization planes, isosurfaces, projections, streamlines, lineplots, surface analytics and the Voxel Eraser |
 | [Measurement](measurement/quantities.md) | Quantities, connecting a probe, recording, replay and data export |
 | [Data processing](data-processing/import-measurement-data.md) | Importing measurement data and working with ParaView |
 | [Supported probes](probes/vectoflow-probes.md) | Probes that work with ProCap |

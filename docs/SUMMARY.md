@@ -46,7 +46,7 @@
   * [Isosurfaces](visualization/isosurfaces.md)
   * [Projections](visualization/projections.md)
   * [Streamlines](visualization/streamlines.md)
-  * [Plot-over line](visualization/plot-over-line.md)
+  * [Lineplot](visualization/lineplot.md)
   * [Surface analytics](visualization/surface-analytics.md)
   * [Voxel Eraser](visualization/voxel-eraser.md)
 
