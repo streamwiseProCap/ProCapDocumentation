@@ -32,8 +32,8 @@
 ## Setting up the scene
 
 * [Setting up the scene](scene-setup/setting-up-the-scene.md)
-  * [Models](scene-setup/models.md)
-  * [Measurement domain and interpolation](scene-setup/measurement-domain-and-interpolation.md)
+  * [Measurement domain and interpolation settings](scene-setup/measurement-domain-and-interpolation.md)
+  * [Model settings](scene-setup/models.md)
   * [Probe settings](scene-setup/probe-settings.md)
 
 ## Visualization features

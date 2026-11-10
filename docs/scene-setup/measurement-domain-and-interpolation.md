@@ -2,7 +2,7 @@
 description: Set up the measurement domain and control how ProCap reconstructs a continuous flow field from measured points.
 ---
 
-# Measurement domain and interpolation
+# Measurement domain and interpolation settings
 
 {% hint style="warning" %}
 This page is being written.

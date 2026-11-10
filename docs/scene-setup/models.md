@@ -2,7 +2,7 @@
 description: Import CAD models, create primitives and control how models are displayed.
 ---
 
-# Models
+# Model settings
 
 {% hint style="info" %}
 **Editions:** All editions. Up to 15 models (Compact: 5).

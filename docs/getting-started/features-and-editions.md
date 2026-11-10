@@ -29,7 +29,6 @@ ProCap is available in four editions. The edition you have is shown in the title
 | User-defined elements | ✓ | – | ✓ | – |
 | Full color map list | ✓ | – | ✓ | ✓ |
 | Custom probe geometry | ✓ | – | ✓ | ✓ |
-| Analog probes | ✓ | – | ✓ | – |
 | External probe | ✓ | – | – | – |
 
 ¹ Student edition: scalar projections only, without streamlines on the projection surface.
