@@ -20,18 +20,27 @@ ProCap is available in four editions. The edition you have is shown in the title
 | [Live measurement](../measurement/recording-a-measurement.md) | ✓ | ✓ | – | ✓ |
 | [Measurement replay](../measurement/measurement-replay.md) | ✓ | ✓ | ✓ | ✓ |
 | [Visualization planes](../visualization/visualization-planes.md) | ✓ | ✓ | ✓ | ✓ |
+| Vector visualization (vectors on planes, surface streamlines, the [Current state](../visualization/probe-data/current-state.md) arrow) | ✓ | ✓ | ✓ | – |
 | [Isosurfaces](../visualization/isosurfaces.md) | ✓ | – | ✓ | ✓ |
 | [Streamlines](../visualization/streamlines.md) | ✓ | – | ✓ | – |
 | [Projections](../visualization/projections.md) | ✓ | – | ✓ | ✓ ¹ |
+| Surface analytics (force, moment, volume flow) | ✓ | – | ✓ | ✓ |
 | [Plot-over line](../visualization/plot-over-line.md) | ✓ | – | ✓ | ✓ |
 | [Voxel Eraser](../visualization/voxel-eraser.md) | ✓ | – | ✓ | – |
+| Attaching planes and rakes to the probe | ✓ | – | ✓ | – |
+| Mesh display (wireframe on planes and models) | ✓ | – | ✓ | – |
+| [MultiGrid and interpolating MLS types](../scene-setup/measurement-domain-and-interpolation.md#interpolation-settings) | ✓ | – | ✓ | – |
 | Confidence interval | ✓ | – | ✓ | – |
 | User-defined elements | ✓ | – | ✓ | – |
-| Full color map list | ✓ | – | ✓ | ✓ |
-| Custom probe geometry | ✓ | – | ✓ | ✓ |
-| External probe | ✓ | – | – | – |
+| Live tracking of models | ✓ | – | – | – |
+| Choice of tracking system | ✓ | – ² | ✓ | ✓ |
+| Choice of acquisition rate | ✓ | – ³ | ✓ | ✓ |
 
 ¹ Student edition: scalar projections only, without streamlines on the projection surface.
+
+² Compact edition: OptiTrack only.
+
+³ Compact edition: fixed at 50 Hz.
 
 ## Limits by edition
 
@@ -39,7 +48,7 @@ ProCap is available in four editions. The edition you have is shown in the title
 | --- | :---: | :---: | :---: | :---: |
 | Visualization planes | 10 | 5 | 10 | 10 |
 | Isosurfaces | 10 | – | 10 | 10 |
-| Models | 15 | 5 | 15 | 15 |
+| Models | 15 | 5 | 15 | 5 |
 
 {% hint style="info" %}
 Buttons in the display header and panels in the hotbar are hidden when your edition does not include the feature.

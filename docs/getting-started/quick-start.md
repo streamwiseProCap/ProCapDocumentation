@@ -24,10 +24,11 @@ You need:
 2. **Prepare the model geometry.** Export your model as an `.stl` file. See [Model settings](../scene-setup/models.md).
 3. **Connect the probe.** Connect the probe to the computer. See [Connecting a probe](../measurement/connecting-a-probe.md).
 4. **Create or open a project.** Start ProCap. On the **LOAD PROJECT** start screen, do one of the following:
-   * Select **CREATE NEW** to start a new project.
-   * Select **BROWSE** and choose an existing project to use as a starting point.
+   * To start a new project, select **CREATE NEW** and select or create an empty folder. ProCap copies the files it needs into the folder and opens the project.
+   * To start from the settings of your most recent project, select **CLONE LAST** and select or create an empty folder. Then select **LOAD**.
+   * To open an existing project, select **BROWSE** and select the top-level folder of the project, not its `Input` folder. Then select **LOAD**.
 
-   Select the top-level folder of the project, not its `Input` folder. If you create a new project, select or create an empty folder, and ProCap copies the files it needs into it. Then select **LOAD**. See [Start screen](../projects/start-screen.md) and [Create and open projects](../projects/create-and-open.md).
+   See [Start screen](../projects/start-screen.md) and [Create and open projects](../projects/create-and-open.md).
 5. **Adjust the probe settings.** Open the **Probe Panel** from the hotbar. Check the probe settings and, under **VRPN Settings**, the **Tracker Type** and **Tracker name** of your probe's rigid body. Select **APPLY**. See [Probe settings](../scene-setup/probe-settings.md).
 6. **Add the model and set up the domain.**
    * Copy the `.stl` file into the `Input` folder of the project.

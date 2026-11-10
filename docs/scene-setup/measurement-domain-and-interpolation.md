@@ -8,12 +8,14 @@ The measurement domain is the box in which ProCap collects measurement points an
 
 ## Change the settings
 
-1. Open **Domain Settings** from the hotbar.
-2. Change the settings you need. They are described in the sections below.
-3. Select **SAVE & RELOAD** to apply the changes, or **CANCEL** to discard them.
+1. Open **Domain Settings** from the hotbar. While the panel is open, ProCap shows the domain in the 3D view, even if you have hidden it.
+2. Change the settings you need. They are described in the sections below. You can also drag the handles of the domain in the 3D view to change its size, position and orientation, and the fields follow. See [Transform gizmos](../workspace/gizmos.md).
+3. Select **SAVE & RELOAD** to apply the changes, or **CANCEL** to discard them. The buttons appear as soon as you change a setting. If your changes need no reload, the button reads **DONE** instead.
+
+If you close the panel without applying, ProCap discards your changes. Changes in [Groundplane Settings](#groundplane-settings) are the exception: they take effect immediately.
 
 {% hint style="warning" %}
-Changes to the dimensions, the voxel size or the interpolation reload the scene. ProCap asks for confirmation, saves the project, disconnects the probe and reloads. Set up the domain before you start measuring.
+Applying changes to the dimensions, the voxel size or the interpolation reloads the scene. ProCap asks for confirmation, stops a running measurement, disconnects the probe and reloads the scene. Your other unsaved changes are kept, but ProCap writes them to the project file only when you save. See [Save, Save As and Reload](../workspace/save-and-reload.md). Set up the domain before you start measuring.
 {% endhint %}
 
 ## Dimensions
@@ -24,7 +26,7 @@ Changes to the dimensions, the voxel size or the interpolation reload the scene.
 | --- | --- |
 | **Size (mm)** | The edge lengths of the domain along X, Y and Z. The maximum is 5000 mm per axis. ProCap rounds each size down to a whole number of voxels. Values outside the allowed range are adjusted automatically, and ProCap shows a warning. |
 | **Origin (mm)** | The position of the corner of the domain from which it extends along X, Y and Z. The position is given in the [coordinate system](../workspace/coordinate-system.md) of the scene. |
-| **Orientation** | The rotation of the domain in degrees about the X, Y and Z axes, applied in that order. The domain rotates about its center, and ProCap updates **Origin (mm)** to match. |
+| **Orientation** | The rotation of the domain in degrees: first about the X axis, then about the rotated Y axis, then about the rotated Z axis. The domain rotates about its center, and ProCap updates **Origin (mm)** to match. |
 
 ## Voxel Settings
 
@@ -42,12 +44,16 @@ With **Use MultiGrid** switched on, ProCap refines voxels that contain many meas
 
 <figure><img src="../.gitbook/assets/domain-settings-interpolation-settings.png" alt="The Interpolation Settings section of the Domain Settings panel"><figcaption><p>Interpolation Settings</p></figcaption></figure>
 
+{% hint style="info" %}
+**Editions:** **Use MultiGrid**, **Split Point Threshold** and the interpolating types `ADAPTIVE_MLSO1_INT` and `ADAPTIVE_MLSO2_INT` are available in Professional and Professional Reader. Compact and Student don't show them.
+{% endhint %}
+
 | Setting | Description |
 | --- | --- |
-| **Interpolation Type** | The method ProCap uses to reconstruct the flow field from the measured points. See the table below. |
+| **Interpolation Type** | The method ProCap uses to reconstruct the flow field from the measured points. The list shows the types available in your edition. See the table below. |
 | **Interpolation Epsilon** | How closely the field follows the measured values. Lower values follow the measured points more closely, higher values give a smoother field. The range is 0.0001 to 0.9, and the default is 0.01. Only shown for the interpolating types (ending in `_INT`). |
 | **Use MultiGrid** | Refines the grid where many measurement points are concentrated. A voxel that contains enough points is split into eight smaller cells, up to two times. If the memory limit is reached, ProCap stops refining and shows a warning. |
-| **Split Point Threshold** | The number of measurement points a voxel must contain before it is split. Lower values refine more of the domain. Only has an effect when **Use MultiGrid** is on. |
+| **Split Point Threshold** | The number of measurement points a voxel must contain before it is split. Lower values refine more of the domain. The minimum is 1. Only shown when **Use MultiGrid** is on. |
 
 All interpolation types use moving least squares (MLS): each value is fitted from the measured points around it.
 
@@ -61,6 +67,8 @@ All interpolation types use moving least squares (MLS): each value is fitted fro
 ## Groundplane Settings
 
 <figure><img src="../.gitbook/assets/domain-settings-groundplane-settings.png" alt="The Groundplane Settings section of the Domain Settings panel"><figcaption><p>Groundplane Settings</p></figcaption></figure>
+
+Changes in this section take effect immediately, without **SAVE & RELOAD**, and **CANCEL** does not revert them. While the panel is open, you can also drag the handle of the ground plane in the 3D view, and the fields follow.
 
 | Setting | Description |
 | --- | --- |

@@ -19,9 +19,9 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 | --- | --- | --- | --- |
 | `getting-started/what-is-procap.md` | stub | Measurement principle: probe, tracking, multigrid, interpolation, visualization | `docs\technical\` (internal, use for concepts only) |
 | `getting-started/system-requirements.md` | stub | Windows x64, GPU with compute shaders, supported tracking systems | Ask the product team |
-| `getting-started/features-and-editions.md` | draft | Feature and limit matrix | `Scripts\Control\EditionCapabilities.cs`, `ProCapEdition.cs`, `ProCapVersion.cs` |
+| `getting-started/features-and-editions.md` | draft | Feature and limit matrix. Verified against the `live` branch on 2026-11-10 (retired features removed, new features added, Student models limit 5) | `Scripts\Control\EditionCapabilities.cs`, `ProCapEdition.cs`, `ProCapVersion.cs` |
 | `getting-started/installation-and-license-activation.md` | stub | Installer, folders next to the exe (`Internal`, `ProbeConfig`, `Templates`, `Legacy`), CodeMeter runtime, dongle, maintenance updates, Reader network server | `Scripts\Configuration\AppPaths.cs`. Missing `procap_manual/wibu.tex`. `docs\encryption\` is internal. |
-| `getting-started/quick-start.md` | draft | End-to-end walkthrough, 11 steps | 2026.0 user manual quick-start guide (p. 55), updated to the 2027 labels from the code base (`LoadProjectShellView.prefab`, `FloatingWindowProbePanel.prefab`, `MeasurementWidget.prefab`, `MainUIView.prefab`) |
+| `getting-started/quick-start.md` | draft | End-to-end walkthrough, 11 steps. Labels verified against the `live` branch on 2026-11-10, including **CLONE LAST** on the start screen | 2026.0 user manual quick-start guide (p. 55), updated to the 2027 labels from the code base (`LoadProjectShellView.prefab`, `FloatingWindowProbePanel.prefab`, `MeasurementWidget.prefab`, `MainUIView.prefab`) |
 
 ## ProCap projects
 
@@ -52,7 +52,7 @@ The landing page `scene-setup/setting-up-the-scene.md` uses the same expandable-
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
 | `scene-setup/setting-up-the-scene.md` | draft | Overview with expandable entries | — |
-| `scene-setup/measurement-domain-and-interpolation.md` | draft | Title: "Measurement domain and interpolation settings". The combined **Domain Settings** panel: Dimensions, Voxel Settings, Interpolation Settings, Groundplane Settings, each with a screenshot crop and a settings table. Reload on apply | User screenshot of the 2027 panel (labels). Behavior from `Configuration\Domain.cs`, `Panels\DomainWindow\`, `Panels\InterpolationSettingsWindow\`, `Panels\GroundPlaneWindow\`, WhatsNew §2.1, §2.2, §3.6. Note: the code base checkout still has three separate windows with older labels ("Size in mm", "Point in mm"), so the screenshot shows a newer build. |
+| `scene-setup/measurement-domain-and-interpolation.md` | draft | Title: "Measurement domain and interpolation settings". The combined **Domain Settings** panel: Dimensions, Voxel Settings, Interpolation Settings, Groundplane Settings, each with a screenshot crop and a settings table. Reload on apply, ground plane applies instantly, edition gating of MultiGrid and the `_INT` types. Verified against the `live` branch on 2026-11-10 | User screenshot of the 2027 panel. `Settings\UI\Panels\DomainSettings.panel.json` (labels), `Panels\DomainWindow\` (incl. the interpolation and ground-plane section controllers), `Configuration\Domain.cs`, `SketchDomain.cs`, `DomainApplier.cs`, `ProCapInterpolation\GPUInterpolation.cs`, WhatsNew §2.1, §2.2, §3.6 |
 | `scene-setup/models.md` | stub | Title: "Model settings". STL import, **From Primitive**, mesh/wireframe overlay, CAD lighting | WhatsNew §3.4, §3.5, §3.10, `Panels\ModelsListWindow\`, `ModelSettingsWindow\`, `FromPrimitiveWindow\` |
 | `scene-setup/probe-settings.md` | stub | All probe configuration: probe selection, Probe Panel settings. The only page that covers probe configuration | `Panels\ProbeWindow\`, `Scripts\Features\ProbeFeature\` |
 
@@ -68,7 +68,7 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 | `visualization/probe-data/probe-data.md` | stub | Probe statistics, HUD | WhatsNew §4.1, `Panels\ProbeStatistics\` |
 | `visualization/visualization-planes.md` | stub | Planes list and settings, surface streamlines, cut planes and outlines | WhatsNew §3.2, §3.7, `Panels\PlanesListWindow\`, `PlaneSettingsWindow\` |
 | `visualization/isosurfaces.md` | stub | Isosurfaces list and settings | `Panels\IsosurfacesListWindow\`, `IsosurfaceSettingsWindow\` |
-| `visualization/projections.md` | stub | Projection surfaces, analytics (force, moment, pivot) | WhatsNew §3.3, `Panels\ProjectionsListWindow\`, `ProjectionSettingsWindow\`, `AnalyticsWindow\` |
+| `visualization/projections.md` | stub | Projection surfaces, analytics (force, moment, pivot) | WhatsNew §3.3, `Panels\ProjectionsListWindow\`, `ProjectionSettingsWindow\`. Analytics now has its own hotbar panel (`SurfaceAnalyticsListWindow\`, `SurfaceAnalysisWindow\`); decide whether it gets its own page |
 | `visualization/streamlines.md` | stub | Rakes, seed points, attach to probe | WhatsNew §4.8, `Panels\RakesListWindow\`, `RakeSettingsWindow\` |
 | `visualization/plot-over-line.md` | stub | Line definition, plot window, plot files | WhatsNew §3.1, `Panels\PlotOverLineListWindow\`, `PlotOverLinePlotWindow\` |
 | `visualization/voxel-eraser.md` | stub | Erasing regions of measurement data | WhatsNew §4.7, `Panels\VoxelEraserWindow\` |
