@@ -52,7 +52,7 @@ The landing page `scene-setup/setting-up-the-scene.md` uses the same expandable-
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
 | `scene-setup/setting-up-the-scene.md` | draft | Overview with expandable entries | — |
-| `scene-setup/measurement-domain-and-interpolation.md` | stub | Title: "Measurement domain and interpolation settings". Domain size, position, orientation, resolution. Interpolation Type, epsilon, **Use MultiGrid**, **Split Point Threshold**, reload on apply | WhatsNew §2.1, §2.2, §3.6, `Panels\DomainWindow\`, `Panels\InterpolationSettingsWindow\` |
+| `scene-setup/measurement-domain-and-interpolation.md` | draft | Title: "Measurement domain and interpolation settings". The combined **Domain Settings** panel: Dimensions, Voxel Settings, Interpolation Settings, Groundplane Settings, each with a screenshot crop and a settings table. Reload on apply | User screenshot of the 2027 panel (labels). Behavior from `Configuration\Domain.cs`, `Panels\DomainWindow\`, `Panels\InterpolationSettingsWindow\`, `Panels\GroundPlaneWindow\`, WhatsNew §2.1, §2.2, §3.6. Note: the code base checkout still has three separate windows with older labels ("Size in mm", "Point in mm"), so the screenshot shows a newer build. |
 | `scene-setup/models.md` | stub | Title: "Model settings". STL import, **From Primitive**, mesh/wireframe overlay, CAD lighting | WhatsNew §3.4, §3.5, §3.10, `Panels\ModelsListWindow\`, `ModelSettingsWindow\`, `FromPrimitiveWindow\` |
 | `scene-setup/probe-settings.md` | stub | All probe configuration: probe selection, Probe Panel settings. The only page that covers probe configuration | `Panels\ProbeWindow\`, `Scripts\Features\ProbeFeature\` |
 
