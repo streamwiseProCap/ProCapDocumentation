@@ -27,7 +27,7 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
-| `projects/start-screen.md` | stub | Recent projects (max. 15), **LOAD PROJECT** | `_scenes\LoadProject.unity`, LoadProjectShellView |
+| `projects/start-screen.md` | draft | **LOAD PROJECT** screen: SELECTED FOLDER with status, RECENT PROJECTS (max. 15), BROWSE, CREATE NEW, CLONE LAST, LOAD, close. Screenshots `start-screen.png`, `start-screen-controls.png` (neutral project path `C:\ProCap\Generic`) | User screenshot of the 2027 start screen. `UI\ProCapUi\LoadProject\` (view and controller), `Configuration\ProjectFileService.cs` |
 | `projects/create-and-open.md` | stub | New project from `Templates\base_template`, open existing | `Scripts\Configuration\ProjectFileService.cs` |
 | `projects/project-folder.md` | stub | `configFile.proCap`, `Input\`, `Output\`, `Output\ScreenShots` | `ProjectFileService.cs` |
 
