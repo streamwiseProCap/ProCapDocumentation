@@ -14,7 +14,6 @@
 ## ProCap projects
 
 * [Start screen](projects/start-screen.md)
-* [Create and open projects](projects/create-and-open.md)
 * [Project folder structure](projects/project-folder.md)
 
 ## The workspace

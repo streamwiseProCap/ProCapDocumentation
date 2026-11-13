@@ -27,24 +27,23 @@ Status values: `stub` (placeholder only), `draft` (content written, not reviewed
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
-| `projects/start-screen.md` | draft | **LOAD PROJECT** screen: SELECTED FOLDER with status, RECENT PROJECTS (max. 15), BROWSE, CREATE NEW, CLONE LAST, LOAD, close. Screenshots `start-screen.png`, `start-screen-controls.png` (neutral project path `C:\ProCap\Generic`) | User screenshot of the 2027 start screen. `UI\ProCapUi\LoadProject\` (view and controller), `Configuration\ProjectFileService.cs` |
-| `projects/create-and-open.md` | stub | New project from `Templates\base_template`, open existing | `Scripts\Configuration\ProjectFileService.cs` |
-| `projects/project-folder.md` | stub | `configFile.proCap`, `Input\`, `Output\`, `Output\ScreenShots` | `ProjectFileService.cs` |
+| `projects/start-screen.md` | draft | **LOAD PROJECT** screen: open a project, create a new one (CREATE NEW, CLONE LAST), elements, folder status. Also covers creating and opening projects (the former page `create-and-open.md` was removed on 2026-11-13). Screenshots `start-screen.png`, `start-screen-controls.png` (neutral project path `C:\ProCap\Generic`) | User screenshot of the 2027 start screen. `UI\ProCapUi\LoadProject\` (view and controller), `Configuration\ProjectFileService.cs` |
+| `projects/project-folder.md` | draft | Folder tree; `Input` (`configFile.proCap`, `configFile_old.proCap` backup, model STLs, `ProbeConfig` and `ProbeGeometry` for custom probes only), new-project contents (checked on a new project `C:\ProCap\Generic`: `configFile.proCap`, `ProCapLogo.STL`, `streamwise_logo.stl`, empty `Output/Data`), `Output` (`Data` with `.proCapLog`, `LogFile.csv` and exports; `1Dplots`; `ScreenShots`) | `Configuration\ProjectFileService.cs`, `WriteToFile.cs`, `ProbeGeometryStore.cs`, `Features\Measurement\ProCapLogRecorder.cs`, `LogFileManifest.cs`, `Panels\DataExportWindow\DataExportView.cs`, `Control\ScreenshotHandler.cs`, `PlotOverLinePlotWindow\PlotExportPaths.cs` |
 
 ## The workspace
 
 | Page | Status | Topics | Sources |
 | --- | --- | --- | --- |
-| `workspace/README.md` | stub | Layout: header, hotbar, floating windows, 3D view | WhatsNew §1.1 |
-| `workspace/display-header.md` | stub | Master toggles (for example the **Current state** icon, which shows or hides the whole current state), left-click vs right-click | WhatsNew §1.1, §1.2 |
+| `workspace/README.md` | draft | Top-level overview with screenshot `workspace-overview.png`: display header, hotbar groups, measurement controls (Measurement Note, Measurement, Probe Statistics, probe data card), 3D view, status line (edition and version, project folder, • for unsaved changes), with links to the subpages | User screenshot of the 2027 workspace. `UI\ProCapUi\MainView.cs`, `VisibilityCategoryToggles.cs`, `CameraViewsController.cs`, `UI\SettingsPanelController.cs`, `Prefabs\UI\Views\MainUIView.prefab` (tooltips), WhatsNew §1.1 |
+| `workspace/display-header.md` | draft | Visualization toggles (left click shows or hides, right click opens the panel), camera group, project commands (FPS, Relative Pressure, Import/Export Data, General Settings, undo/redo, Save/Save As/Reload, close). Icons for every button | Screenshots 2026-11-13, `DisplayHeader.cs`, `VisibilityCategoryToggles.cs`, `MainUIView.prefab` |
 | `workspace/coordinate-system.md` | stub | Axes, origin, units, coordinate origin toggle | WhatsNew §1.1 (Coordinate Origin) |
 | `workspace/hotbar-and-windows.md` | stub | Panel bubbles, list windows, Apply/Cancel | WhatsNew §1.1, `Scripts\UI\ProCapUi\Hotbar\` |
-| `workspace/probe-statistics.md` | stub | HUD block: connection state (Disconnected, Connecting..., Connected, Calibrating..., Calibrated), data rate in Hz with dropped samples and reconnects, probe model, tracking warning | WhatsNew §4.1, `Panels\ProbeStatistics\` (lives in `ProbeDebug.prefab`, but the user confirmed on 2026-11-10 that customers see it). The software shows no title for the HUD; "Probe statistics" is a working title |
-| `workspace/probe-data-card.md` | stub | Probe data card in the main workspace: velocity magnitude, value of the current-state quantity, probe tip position in mm, option to let the card follow the probe tip on screen (it returns to its place when tracking is lost). Not part of the current state; `visualization/current-state.md` only links to it | `Panels\CurrentStateCard\` (needs a screenshot for the labels) |
-| `workspace/camera-and-navigation.md` | stub | Orbit, pan, zoom, saved views, lights | WhatsNew §3.11 |
+| `workspace/probe-statistics.md` | draft | Model, data rate, connection states, tracking warning, **Follow Probe**. Hidden in Reader | Screenshots 2026-11-13, `Panels\ProbeStatistics\`, `ProbeDebug.prefab`. "Probe statistics" is the visible panel title |
+| `workspace/probe-data-card.md` | draft | Velocity, current-state scalar value, tip position in mm, **Follow Probe** behavior (returns to its place when tracking is lost for 2 s) | Screenshots 2026-11-13, `Panels\CurrentStateCard\` |
+| `workspace/camera-and-navigation.md` | draft | Mouse navigation, view axes (snap, double-click roll, rings), reset camera, camera view slots, screenshots. Lights not covered (CAD lighting is an open point) | `OrbitCameraController.cs`, `ViewAxesGizmo.cs`, `CameraViewsController.cs`, `ScreenshotHandler.cs` |
 | `workspace/gizmos.md` | stub | Transform gizmos. Written so far: selecting objects (orange selected outline, light-blue hover outline) and the quick actions bar in detail (Show or hide, Edit, Move or edit shape, Duplicate, Delete, Lock color map). Still to write: the gizmo itself (arrows, rings, local vs scene axes) | `Scripts\Interaction\Gizmo\`, `UI\ProCapUi\Interaction\StandardQuickActions.cs`, `Interaction\SelectionOutlineSystem.cs` |
-| `workspace/general-settings.md` | stub | **General Settings** (opened from the header cog): Interface Scale, Skybox Settings (stored per machine), edition and version in the title | WhatsNew §1.3, §1.7, `Panels\SoftwareSettingsWindow\` |
-| `workspace/save-and-reload.md` | stub | Save (case info review), Save As (folder clone, confirmation if the destination is not empty), Reload (confirms, stops probes, reloads from disk). The only page that covers saving and reloading | WhatsNew §1.6, `Panels\SaveSettingsWindow\` |
+| `workspace/general-settings.md` | draft | User Interface (Interface Scale, Gizmo Scale), Notifications (Max shown, Duration), Skybox Settings (crosses). Per machine, instant apply | Screenshot 2026-11-13, `SoftwareSettings.panel.json`, `SoftwareSettingsWindowController.cs` |
+| `workspace/save-and-reload.md` | draft | **SAVE SETTINGS** with Case Information, Ctrl+S, Save As (folder clone and its checks), Reload (confirmation, disconnects, reloads from disk) | Screenshots 2026-11-13, `SettingsPanelController.cs`, `SaveSettingsView.cs` |
 | `workspace/warnings-and-notices.md` | stub | WARNING / NOTICE dialogs, revert behavior | WhatsNew §1.5 |
 
 ## Setting up the scene
@@ -80,9 +79,9 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 | --- | --- | --- | --- |
 | `measurement/quantities.md` | stub | Measured and derived quantities (magnitude, component, curl, divergence, Q-criterion, vorticity), ppV, ppVraw, PointDensity, ConfInt | WhatsNew §3.8, `Scripts\Quantities\Rules\` |
 | `measurement/connecting-a-probe.md` | stub | Physical connection only: COM port / IP connection, checking that data arrives. Link to `scene-setup/probe-settings.md` for configuration | WhatsNew §4.1, §4.2, `Scripts\Features\ProbeFeature\` |
-| `measurement/recording-a-measurement.md` | stub | **START MEASUREMENT**, recording, measurement note, `.proCapLog` | WhatsNew §4.3, §4.5, `Scripts\Features\Measurement\` |
-| `measurement/measurement-replay.md` | stub | Replay, model-pose replay, Reader without tracker | WhatsNew §4.3–§4.5, §4.9, `Scripts\Features\ModelReplay\` |
-| `measurement/data-export.md` | stub | **DATA EXPORT**: VTU (ParaView), raw data CSV, STL, screenshots | WhatsNew §4.6, `Panels\DataExportWindow\DataExportView.cs` |
+| `measurement/recording-a-measurement.md` | draft | Steps from CONNECT to STOP MEASUREMENT, measurement button states (NOT CONNECTED, CALIBRATING..., START/STOP/CONTINUE MEASUREMENT, INCOMPATIBLE PROBE), RECORDING badge | Screenshots 2026-11-13, `MeasurementToggleButton.cs`, `MeasurementUiController.cs` |
+| `measurement/measurement-replay.md` | draft | Time slider, time labels, rewind/play/pause/forward. Model-pose replay mentioned briefly | Screenshot 2026-11-13, `ReplayUiController.cs`, `ReplayFeatureModule.cs` |
+| `measurement/data-export.md` | draft | **DATA EXPORT** options with file names, File Prefix, EXPORT NOW / JUMP TO END during a replay. Screenshots are covered in camera-and-navigation | Screenshot 2026-11-13, `DataExportView.cs`, exporters |
 | `measurement/keeping-track-of-the-data.md` | stub | Measurement notes, `LogFile.csv`, project folder organization (scope to be confirmed) | `Scripts\Features\Measurement\ProCapLogRecorder.cs` |
 
 ## Data processing
@@ -116,7 +115,7 @@ The landing page `visualization/visualization-features.md` is only a list of exp
 
 ## Placeholder assets to replace
 
-* None. All icons are PNGs cropped from ProCap screenshots.
+* None. All icons are rendered from the icon fonts that ProCap itself uses: the Material Design Icons font of PurrUI and the ProCapIcons font. The glyph names are in the code (for example `<icon=content_save>` or `procap_domain`). Use the same glyph as the button in the software, 55×55 px, #363636 fill, white glyph.
 
 ## UI labels to change in the software
 
@@ -128,6 +127,7 @@ The documentation already uses the new labels. Replace the screenshot crops that
 | Projections Panel | Projections | Hotbar name of the projections list | — |
 | Probe Panel | Probe Settings | Hotbar name of the probe settings panel | — |
 | Plot-over line | Lineplot | Hotbar name and title of the list panel, feature name everywhere (also the default item names such as "Plot-over-line-0") | `lineplot-list-panel.png`, `lineplot-window.png` |
+| Plot-over-line | Lineplot | Tooltip of the toggle in the display header | — |
 
 ## Open questions
 

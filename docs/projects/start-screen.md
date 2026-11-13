@@ -17,7 +17,28 @@ When ProCap starts, it shows the **LOAD PROJECT** start screen. Here you choose 
 2. Check the status next to **SELECTED FOLDER**. See [Folder status](#folder-status).
 3. Select **LOAD**.
 
-To start a new project, see [Create and open projects](create-and-open.md).
+## Create a new project
+
+You can start a new project from scratch or from a copy of your last project. In both cases, you need an empty folder for the new project.
+
+{% tabs %}
+{% tab title="From scratch" %}
+1. Select **CREATE NEW**.
+2. Select or create an empty folder.
+
+ProCap sets up a new project with default settings in the folder and opens it.
+{% endtab %}
+
+{% tab title="From your last project" %}
+1. Select **CLONE LAST**.
+2. Select or create an empty folder.
+3. Select **LOAD**.
+
+ProCap copies the settings, models and other files of your most recent project into the folder. Measurement data is not copied. Use this to start a new measurement series with the same setup.
+{% endtab %}
+{% endtabs %}
+
+If the folder you select is not empty, ProCap shows a notice and does nothing, so an existing project is never overwritten. See [Project folder structure](project-folder.md) for what a project contains.
 
 ## Elements of the start screen
 
@@ -32,8 +53,6 @@ To start a new project, see [Create and open projects](create-and-open.md).
 | **CLONE LAST** | Copies your most recent project into an empty folder: its project file, models and other files in the `Input` folder. The `Output` folder of the copy starts empty, so no measurement data is copied. Then select **LOAD** to open the copy. |
 | **LOAD** | Opens the project in **SELECTED FOLDER**. |
 | Red close button | Closes ProCap. |
-
-For **CREATE NEW** and **CLONE LAST**, select or create an empty folder. If the folder is not empty, ProCap shows a notice and does nothing, so an existing project is never overwritten.
 
 ## Folder status
 

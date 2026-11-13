@@ -28,7 +28,7 @@ You need:
    * To start from the settings of your most recent project, select **CLONE LAST** and select or create an empty folder. Then select **LOAD**.
    * To open an existing project, select **BROWSE** and select the top-level folder of the project, not its `Input` folder. Then select **LOAD**.
 
-   See [Start screen](../projects/start-screen.md) and [Create and open projects](../projects/create-and-open.md).
+   See [Start screen](../projects/start-screen.md).
 5. **Adjust the probe settings.** Open **Probe Settings** from the hotbar. Check the probe settings and, under **VRPN Settings**, the **Tracker Type** and **Tracker name** of your probe's rigid body. Select **APPLY**. See [Probe settings](../scene-setup/probe-settings.md).
 6. **Add the model and set up the domain.**
    * Copy the `.stl` file into the `Input` folder of the project.
@@ -43,7 +43,7 @@ You need:
 
    See [Recording a measurement](../measurement/recording-a-measurement.md).
 10. **Stop the measurement.** When you are done, select **STOP MEASUREMENT**.
-11. **Export the data.** Select **Export Data** in the display header. In the **DATA EXPORT** dialog, choose the data you want and select **Export**. See [Data export](../measurement/data-export.md).
+11. **Export the data.** Select **Export Data** in the display header. In the **DATA EXPORT** dialog, choose the data you want and select **EXPORT**. See [Data export](../measurement/data-export.md).
 
 ## Next steps
 
